@@ -16,43 +16,30 @@
             <div class="nav-wrapper container"></div>
         </nav>
 
-        <div id="index-banner" class="parallax-container">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <br><br>
-                    <h1 class="header center teal-text text-lighten-2">AllanC56 on GitHub</h1>
-
-                    <div id="repos-div" class="row center">
-                        <h4 id="repos-number" class="header col s12 light" style="margin-bottom: 0rem;">-</h4>
-                        <h5 class="header col s12 light" style="margin-top: 0.2rem;">repositories</h5>
-                    </div>
-
-                    <div class="row center">
-                        <a href="https://github.com/AllanC56" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Check that</a>
-                    </div>
-                    <br><br>
-
-                </div>
+        <div class="container">
+            <br><br><br><br>
+            <div id="avatar-div" class="row center">
+                <img class="responsive-img z-depth-4" src="https://avatars3.githubusercontent.com/u/18035735?v=4" alt="AllanC56" width="150" height="150" style="border-radius: 10px">
             </div>
-            <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+            <h1 class="header center teal-text text-lighten-2">AllanC56 on GitHub</h1>
+
+            <div id="repos-div" class="row center">
+                <h4 id="repos-number" class="header col s12 light" style="margin-bottom: 0%;">-</h4>
+                <h5 class="header col s12 light" style="margin-top: 0.2rem;">public repositories</h5>
+            </div>
+            <!-- <div id="commits-div" class="row center">
+                <h4 id="commits-number" class="header col s12 light" style="margin-bottom: 0rem;">-</h4>
+                <h5 class="header col s12 light" style="margin-top: 0.2rem;">total commits</h5>
+            </div> -->
+
+            <div class="row center">
+                <a href="https://github.com/AllanC56" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Check that</a>
+            </div>
+            <br><br>
+
         </div>
 
-        <script type="text/javascript">
-            const req = new XMLHttpRequest();
-
-            req.onreadystatechange = function(event) {
-                // XMLHttpRequest.DONE === 4
-                if (this.readyState === XMLHttpRequest.DONE) {
-                    if (this.status === 200) {
-                        var response = JSON.parse(this.responseText);
-                        document.getElementById("repos-number").innerHTML = response.public_repos;
-                    }
-                }
-            };
-
-            req.open('GET', 'https://api.github.com/users/AllanC56', true);
-            req.send(null);
-        </script>
+        <script type="text/javascript" src="js/data.js"></script>
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
