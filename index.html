@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>AllanC56 on GitHub</title>
-        <link rel="icon" type="image/png" href="img/favicon.png">
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-    <body>
-        <nav class="teal" role="navigation">
-            <div class="nav-wrapper container"></div>
-        </nav>
-
-        <div class="container">
-            <br><br><br><br>
-            <div id="avatar-div" class="row center">
-                <img class="responsive-img z-depth-4" src="https://avatars3.githubusercontent.com/u/18035735?v=4" alt="AllanC56" width="150" height="150" style="border-radius: 10px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>AllanC56 on GitHub</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection">
+</head>
+<body>
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-teal-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
             </div>
-            <h1 class="header center teal-text text-lighten-2">AllanC56 on GitHub</h1>
-
-            <div id="repos-div" class="row center">
-                <h4 id="repos-number" class="header col s12 light" style="margin-bottom: 0%;">-</h4>
-                <h5 class="header col s12 light" style="margin-top: 0.2rem;">public repositories</h5>
-            </div>
-            <!-- <div id="commits-div" class="row center">
-                <h4 id="commits-number" class="header col s12 light" style="margin-bottom: 0rem;">-</h4>
-                <h5 class="header col s12 light" style="margin-top: 0.2rem;">total commits</h5>
-            </div> -->
-
-            <div class="row center">
-                <a href="https://github.com/AllanC56" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Check that</a>
-            </div>
-            <br><br>
-
         </div>
+    </div>
+    <script type="text/javascript" src="js/preload.js"></script>
 
+    <nav class="teal" role="navigation">
+        <div class="nav-wrapper container"></div>
+    </nav>
+
+    <div class="container">
+        <br><br><br><br>
+        <div id="avatar-div" class="row center">
+            <img class="responsive-img z-depth-4" src="https://avatars3.githubusercontent.com/u/18035735?v=4" alt="AllanC56" width="150" height="150" style="border-radius: 10px">
+            <br>
+            <h4 id="name" class="header col s12" style="margin-bottom: 5px;">-</h4>
+            <h5 id="login" class="header col s12 light" style="margin-top: 0px;">-</h5>
+            <h6 id="bio" class="header col s12 light" style="margin-top: 0px; margin-bottom: 20px;">-</h6>
+            <div id="location" class="chip">
+                <i class="non-closeable material-icons">place</i>
+            </div>
+            <br>
+            <div id="public_repos" class="chip">
+                <i class="non-closeable material-icons">folder</i>
+            </div>
+            <br>
+            <div id="hireable" class="chip">
+                <i class="non-closeable material-icons">work</i>
+            </div>
+            <br>
+            <div class="chip">
+                <i class="non-closeable material-icons">notifications</i>
+                Joined 23/03/2016
+            </div>
+        </div>
         <script type="text/javascript" src="js/data.js"></script>
 
-        <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
+        <div class="row center">
+            <a href="https://github.com/AllanC56" class="btn-large waves-effect waves-light teal lighten-1">Discover me</a>
+        </div>
+        <br><br>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
 </html>

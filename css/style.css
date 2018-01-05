@@ -1,0 +1,22 @@
+/* Custom Stylesheet */
+
+.non-closeable {
+  float: left;
+  font-size: 16px;
+  line-height: 32px;
+  padding-right: 4px;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #EEE;
+
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
