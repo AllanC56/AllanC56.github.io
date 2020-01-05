@@ -1,18 +1,18 @@
-function requestUserInfos() {
+function queryUserInfos() {
     const request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (this.readyState === XMLHttpRequest.DONE) {
             if (this.status === 200) {
                 var response = JSON.parse(this.responseText);
-                document.getElementById("name").innerHTML = response.name;
-                document.getElementById("login").innerHTML = response.login;
-                document.getElementById("bio").innerHTML = response.bio;
-                document.getElementById("location").innerHTML += response.location;
-                document.getElementById("public_repos").innerHTML += response.public_repos + " Public Repos";
-                if (response.hireable == true) {
-                    document.getElementById("hireable").innerHTML += "Hireable";
+                document.getElementById("name").innerText = response.name;
+                document.getElementById("login").innerText = response.login;
+                document.getElementById("bio").innerText = response.bio;
+                document.getElementById("location").insertAdjacentHTML("beforeend", response.location);
+                document.getElementById("public_repos").insertAdjacentHTML("beforeend", response.public_repos + " Public Repos");
+                if (response.hireable) {
+                    document.getElementById("hireable").insertAdjacentHTML("beforeend", "Hireable");
                 } else {
-                    document.getElementById("hireable").innerHTML += response.company;
+                    document.getElementById("hireable").insertAdjacentHTML("beforeend", "Works at " + response.company);
                 }
             }
         }
@@ -21,4 +21,4 @@ function requestUserInfos() {
     request.send();
 }
 
-requestUserInfos();
+queryUserInfos();
