@@ -1,4 +1,23 @@
-/* Custom Stylesheet */
+#avatar {
+    border-radius: 10px;
+}
+
+#avatar-div {
+    margin-top: 100px;
+}
+
+#bio {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#login {
+    margin-top: 0px;
+}
+
+#name {
+    margin-bottom: 5px;
+}
 
 .non-closeable {
   float: left;
